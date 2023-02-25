@@ -5,10 +5,18 @@
   --accent-color: #4d5ae5;
   --primare-background-color: #f4f4fd;
   --hovet-background-color: #404bbf;
+  --secondary-font-color: #FFFFFF;
+
 }
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 /* колір основного тексту #434455*/
@@ -24,9 +32,20 @@ ul {
   text-decoration: none;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.section.no-padding {
+padding-top: 0;
+padding-bottom: 0;
+}
+
 /* Header */
 
 .header-navigation {
+
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -37,18 +56,28 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  display: flex;
 }
 .header-subject {
   color: var(--title-text-color);
   text-decoration: none;
+  display: flex;
 }
 
+.header-list {
+  display: flex;
+}
 .header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  display: flex;
+}
+
+.header-item {
+/*display: flex;*/
 }
 .header-mailto,
 .header-tel {
@@ -57,13 +86,8 @@ ul {
   font-style: normal;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
 }
-/*.header-tel {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}*/
 
 .header-mailto:hover {
   color: var(--accent-color);
@@ -82,13 +106,17 @@ ul {
 
 .hero {
   background: var(--title-text-color);
+  text-align: center;
 }
-.hero-headline {
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-top: 188px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--secondary-font-color);
 }
 .hero-button {
   font-family: inherit;
@@ -97,9 +125,17 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+
+  color: var(--secondary-font-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  display: inline-block;
+  align-items: center;
+  order: 0;
+  margin-bottom: 188px;
 }
 
 .hero-button:hover {
@@ -114,12 +150,15 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .advantages-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*article*/
@@ -130,7 +169,21 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-text-color);
+  text-align: center;
 }
+
+.article-list {
+
+}
+
+.article-item {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+
 /*Team*/
 .team {
   background-color: var(--primare-background-color);
@@ -142,6 +195,7 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-text-color);
+  text-align: center;
 }
 
 .team-subtitle {
@@ -150,6 +204,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -157,6 +212,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*Footer*/
@@ -191,16 +248,25 @@ ul {
   cursor: pointer;
   color: var(--accent-color);
   background-color: var(--primare-background-color);
-  border: 1px solid #e7e9fc;
-  font-family: "Roboto", sans-serif;
+  
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
+  /*display: inline-block;*/
+  text-align: center;
+  border: 1px solid #e7e9fc;
+  display: flex;
 }
 
 .button:hover,
 .button:focus {
-  color: #ffffff;
+  color: var(--secondary-font-color);
   background: var(--hovet-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -227,6 +293,8 @@ ul {
   white-space: nowrap;
 }
 
+.portfolio-list {
+}
 .portfolio-item {
   font-weight: 500;
   font-size: 20px;
@@ -240,4 +308,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.portfolio-link {
+  text-decoration-line: none;
 }
