@@ -45,6 +45,14 @@ body {
   margin: 0;*/
   list-style: none;
 }
+.item {
+
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /*.section.no-padding {
 padding-top: 0;
@@ -55,6 +63,7 @@ padding-bottom: 0;
 
 .header {
   padding: 24px 0;
+  border-bottom: 1px solid #E7E9FC
 
 }
 
@@ -200,7 +209,11 @@ gap: 40px;
 .advantages-list{
   display: flex;
   gap: 24px;
+  align-items: center;
 }
+.advantages-items (
+
+)
 .advantages-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -216,15 +229,14 @@ gap: 40px;
   color: var(--primary-text-color);
   margin-top: 0;
   padding-bottom: 120px;
-  width: 264px;
+  max-width: 264px;
 }
 
 /*article*/
 
 .article-container{
   display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
+   gap: 24px;
 }
 
 .article-title {
@@ -239,7 +251,9 @@ gap: 40px;
 }
 
 .article-list {
-
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
 .article-item {
@@ -247,8 +261,7 @@ gap: 40px;
   max-width: 100%;
   height: auto;
   padding-bottom: 120px;
-  width: calc((100%-48) / 3);
-
+ 
 }
 
 
@@ -268,6 +281,15 @@ gap: 40px;
   margin-bottom: 72px;
 }
 
+
+.team-item {
+  background-color: var(--background-color);
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
