@@ -479,7 +479,7 @@ gap: 40px;
   margin: 0 auto;
 }
 
-.card {
+.portfolio-img {
   /*border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -489,6 +489,7 @@ gap: 40px;
   max-width: 100%;
   height: auto;
   border: 1px solid #E7E9FC;
+  margin-bottom: 32px;
 
 }
 .portfolio-list {
@@ -518,6 +519,13 @@ gap: 40px;
 }
 .content-item-photo {
   width: calc((100%-48) /3);
+  width: 360px;
+  height: 420px;
+  border: 1px solid #E7E9FC;
+  background: var(--background-color);
+  margin: 0;
+  margin-bottom: 48px;
+  box-sizing: border-box;
 
 }
 .portfolio-item {
