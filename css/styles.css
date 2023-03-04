@@ -88,6 +88,8 @@ img {
 display: flex;
 gap: 40px;
 align-items: center;
+
+
 }
 .header-link {
   font-weight: 500;
@@ -95,6 +97,7 @@ align-items: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  
 }
 
 
@@ -212,6 +215,9 @@ align-items: center;
 
 /*article*/
 
+.article {
+padding-bottom: 120px;
+}
 
 .article-title {
   font-weight: 700;
@@ -229,7 +235,7 @@ align-items: center;
   display: flex;
   gap: 24px;
   list-style: none;
-  padding-bottom: 120px;
+  
 }
 
 .article-item {
@@ -378,7 +384,7 @@ align-items: center;
 
 .portfolio {
 padding-top: 96px;
-;
+padding-bottom: 120px;
   
 }
 
@@ -400,11 +406,11 @@ padding-top: 96px;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
+ 
 }
 
 .content-item {
-  flex-basis: calc((100% - 3 * 24px) / 3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-item {
